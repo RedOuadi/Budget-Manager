@@ -4,9 +4,10 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
     <persistence-unit name="default">
-
         <class>com.model.User</class>
-
+        <class>com.model.Transaction</class>
+        <class>com.model.Categorie</class>
+        <class>com.model.Budget</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/BudgetManager"/>
             <property name="hibernate.connection.username" value="postgres"/>
@@ -14,7 +15,6 @@
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-
         </properties>
     </persistence-unit>
 </persistence>
